@@ -1,0 +1,77 @@
+/* ヘッダー */
+.header {
+  position:fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 50px;
+  color: black;
+  background-color: #7aa7de;
+  padding-inline: 15px;
+  align-content: center;
+}
+
+/* ハンバーガーボタン */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* 三本線 */
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ナビゲーションメニュー */
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  min-width: 200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  border-bottom: 1px solid #eee;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #f5f5f5;
+}
+
+/* メニュー表示時 */
+.menu.is-active {
+  display: block;
+}
